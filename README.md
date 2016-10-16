@@ -1,0 +1,2 @@
+# ThumbnailGenerator
+Thumbnail Generator Component
