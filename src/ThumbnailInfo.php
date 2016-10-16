@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Site\Component\Image;
+namespace Butterfly\Component\ThumbnailGenerator;
 
 use Symfony\Component\HttpFoundation\File\File;
 
