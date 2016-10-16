@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Site\Component\Image;
+namespace Butterfly\Component\ThumbnailGenerator;
 
 class ThumbnailTwigExtension extends \Twig_Extension
 {

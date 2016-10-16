@@ -4,9 +4,9 @@ web.dir.image_upload: '/upload'
 services:
 
   bfy.thumbnail_generator:
-    class: 'App\Site\Component\Image\ThumbnailGenerator'
+    class: 'Butterfly\Component\ThumbnailGenerator\ThumbnailGenerator'
     arguments: ['%parameters/app.dir.image_upload', '%parameters/web.dir.image_upload', '@bfy.image_processor']
 
   bfy.thumbnail_generator.twig_extension:
-    class: 'App\Site\Component\Image\ThumbnailTwigExtension'
+    class: 'Butterfly\Component\ThumbnailGenerator\ThumbnailTwigExtension'
     tags: 'bfy_adapter.twig.extensions'
