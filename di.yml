@@ -1,0 +1,12 @@
+app.dir.image_upload: '%app.dir.root%/web%web.upload%'
+web.dir.image_upload: '/upload'
+
+services:
+
+  bfy.thumbnail_generator:
+    class: 'App\Site\Component\Image\ThumbnailGenerator'
+    arguments: ['%parameters/app.dir.image_upload', '%parameters/web.dir.image_upload', '@bfy.image_processor']
+
+  bfy.thumbnail_generator.twig_extension:
+    class: 'App\Site\Component\Image\ThumbnailTwigExtension'
+    tags: 'bfy_adapter.twig.extensions'
