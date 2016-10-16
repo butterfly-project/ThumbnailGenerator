@@ -1,0 +1,26 @@
+{
+    "name": "butterfly/thumbnail-generator",
+    "type": "library",
+    "description": "Butterfly PHP. Thumbnail Generator Component",
+    "keywords": ["Image", "Thumbnail"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marat Fakhertdinov",
+            "email": "marat.fakhertdinov@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "butterfly/image-processor": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Butterfly\\Component\\ThumbnailGenerator\\": "src/",
+            "Butterfly\\Component\\ThumbnailGenerator\\Tests\\": "tests/unit/"
+        }
+    }
+}
